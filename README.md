@@ -70,7 +70,7 @@ The application is intended for small and medium sized internal deployment workf
 Enter the GitHub owner or organisation, then fetch the repositories available to the authenticated account.
 
 <p align="center">
-  <img src="docs/screenshot-github-source.png" alt="GitHub Deployment Manager showing the GitHub source and repository selection screen" width="100%">
+<img width="954" height="439" alt="image" src="https://github.com/user-attachments/assets/437fa093-981c-4fd8-9541-4697b617f85d" />
 </p>
 
 ### Step 2: Choose and validate a release package
@@ -78,13 +78,15 @@ Enter the GitHub owner or organisation, then fetch the repositories available to
 Select a published release. The application validates that the release is accessible and identifies the package that can be deployed.
 
 <p align="center">
-  <img src="docs/screenshot-release-and-deploy.png" alt="GitHub Deployment Manager showing release validation and deployment destination" width="100%">
+<img width="957" height="502" alt="image" src="https://github.com/user-attachments/assets/9453cbf8-aacf-4b37-b003-a311c38b692b" />
 </p>
 
 ### Step 3: Confirm the deployment destination
 
 The deployment destination can be a local folder or a network share. Use **Test** before deployment to verify that the current Windows account can access the destination.
-
+<p align="center">
+<img width="958" height="499" alt="image" src="https://github.com/user-attachments/assets/987bf002-0d7b-4efd-b47e-72a1741a5c1d" />
+</p>
 ## Typical Workflow
 
 ```text
