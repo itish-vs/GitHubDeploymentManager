@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <!-- Only publish English satellite resources to avoid extra language folders -->
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="GitHubDeploymentManager.Tests\**\*.cs" />
+    <Compile Remove="ToastNotificationLibrary\**" />
+    <EmbeddedResource Remove="GitHubDeploymentManager.Tests\**\*" />
+    <EmbeddedResource Remove="ToastNotificationLibrary\**" />
+    <None Remove="GitHubDeploymentManager.Tests\**\*" />
+    <None Remove="ToastNotificationLibrary\**" />
+    <None Remove="README.md" />
+    <None Remove=".github\upgrades\scenarios\dotnet-version-upgrade\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".github\copilot-instructions.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ToastNotificationLibrary\ToastNotificationLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

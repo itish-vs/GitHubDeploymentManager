@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="GitHubDeploymentManager.csproj" />
+  <Project Path="GitHubDeploymentManager.Tests/GitHubDeploymentManager.Tests.csproj" />
+  <Project Path="ToastNotificationLibrary/ToastNotificationLibrary.csproj" />
+</Solution>
